@@ -21,7 +21,7 @@ The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established. 
 ```
 I typed in "yes" in the terminal to continue. 
 6. You will be prompted for your password. Type in your password.
-7. Pray that you get succesfully logged into the remote server after you type in your password. If successful, you should see a message similar to 
+7. Pray that you get successfully logged into the remote server after you type in your password. If successful, you should see a message similar to 
 ```
 Last login: Sat Apr  8 15:20:52 2023 from 100.83.32.100
 Hello cs15lsp23fd, you are currently logged into ieng6-202.ucsd.edu
@@ -39,5 +39,8 @@ Sat Apr 08, 2023  4:35pm - Prepping cs15lsp23
 ```
 The following picture shows you the entire process of how I successfully connected to the remote server. Unfortunately, this picture does not contain the authentication part. However, the authentication part is just a matter of typing in "yes" to the terminal. Use the picture below as a guide!
 ![ssh](ssh.png)
+
+Here, you might be wondering where I faced difficulties like I mentioned above. I purposely asked you to pray that you get successfully logged into the remote server after typing in your password. In my experience, after I typed in my password, I got the error message `Connection to ieng6.ucsd.edu closed by remote host. Connection to ieng6.ucsd.edu closed.` How did I fix this? I first tried changing my password to see if it would help. However, even after changing my password and using my new password, I was still receiving the same error message. I then tried to log into one of the lab computers to see if my course-specific account was functioning in the first place. I could log in. Unsure of what to do, I emailed Dr Politz for help. He emailed one of the school adminstrators to help me with the issue. The school adminstrator then resolved the issue by running a server synchronization process. Since then, I get connected to the remote server aftet I type in my passcode. 
+
 
 ### Step 3: Trying Some Commands
