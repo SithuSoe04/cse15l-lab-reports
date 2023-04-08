@@ -19,20 +19,21 @@ I had so much difficulties connecting to a remote server. However, I don't think
 6. You will be prompted for your password. Type in your password.
 7. Pray that you get succesfully logged into the remote server after you type in your password. If successful, you should see a message similar to 
 ```
-Last login: Sun Jan  2 14:03:05 2022 from 107-217-10-235.lightspeed.sndgca.sbcglobal.net
-quota: No filesystem specified.
-Hello cs15lsp23zz, you are currently logged into ieng6-203.ucsd.edu
+Last login: Sat Apr  8 15:20:52 2023 from 100.83.32.100
+Hello cs15lsp23fd, you are currently logged into ieng6-202.ucsd.edu
 
 You are using 0% CPU on this system
 
 Cluster Status 
 Hostname     Time    #Users  Load  Averages  
-ieng6-201   23:25:01   0  0.08,  0.17,  0.11
-ieng6-202   23:25:01   1  0.09,  0.15,  0.11
-ieng6-203   23:25:01   1  0.08,  0.15,  0.11
+ieng6-201   16:35:01   11  0.03,  0.16,  0.22
+ieng6-202   16:35:01   6   3.10,  3.08,  3.11
+ieng6-203   16:35:01   4   0.03,  0.38,  0.79
 
-Sun Jan 02, 2022 11:28pm - Prepping cs15lsp23
+ 
+Sat Apr 08, 2023  4:35pm - Prepping cs15lsp23
 ```
-8. The following picture shows you the entire process of how I successfully connected to the remote server. Use it as a guide!
+8. The following picture shows you the entire process of how I successfully connected to the remote server. Unfortunately, this picture does not contain the authentication part. However, the authentication part is just a matter of typing in "yes" to the terminal. Use the picture below as a guide!
+![ssh](ssh.png)
 
 ### Step 3: Trying Some Commands
