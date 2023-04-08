@@ -16,8 +16,10 @@ I had so much difficulties connecting to a remote server. However, I don't think
 3. Open a fresh new terminal in your VSCode
 4. Type in the command `ssh cs15lsp23zz@ieng6.ucsd.edu` with zz replaced by the letters in your course-specific account. 
 5. If you are trying to connect to a remore server for the first time, you may see a message similar to 
-```The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established. RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec. Are you sure you want to continue connecting (yes/no/[fingerprint])? 
-```. I typed in "yes" in the terminal to continue. 
+```
+The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established. RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec. Are you sure you want to continue connecting (yes/no/[fingerprint])? 
+```
+I typed in "yes" in the terminal to continue. 
 7. You will be prompted for your password. Type in your password.
 8. Pray that you get succesfully logged into the remote server after you type in your password. If successful, you should see a message similar to 
 ```
