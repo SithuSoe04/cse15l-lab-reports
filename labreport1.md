@@ -44,3 +44,4 @@ Here, you might be wondering where I faced difficulties like I mentioned above. 
 
 
 ### Step 3: Trying Some Commands
+This is where you can explore some useful commands that can help you navigate your own computer or the remote computer. 
