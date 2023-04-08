@@ -15,9 +15,11 @@ I had so much difficulties connecting to a remote server. However, I don't think
 2. If you do not know your password or need to reset your password, follow the instructions [here](https://drive.google.com/file/d/17IDZn8Qq7Q0RkYMxdiIR0o6HJ3B5YqSW/view)
 3. Open a fresh new terminal in your VSCode
 4. Type in the command `ssh cs15lsp23zz@ieng6.ucsd.edu` with zz replaced by the letters in your course-specific account. 
-5. If you are trying to connect to a remore server for the first time, you may see a message similar to `The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established. RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec. Are you sure you want to continue connecting (yes/no/[fingerprint])? `. I typed in "yes" in the terminal to continue. 
-6. You will be prompted for your password. Type in your password.
-7. Pray that you get succesfully logged into the remote server after you type in your password. If successful, you should see a message similar to 
+5. If you are trying to connect to a remore server for the first time, you may see a message similar to 
+```The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established. RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec. Are you sure you want to continue connecting (yes/no/[fingerprint])? 
+```. I typed in "yes" in the terminal to continue. 
+7. You will be prompted for your password. Type in your password.
+8. Pray that you get succesfully logged into the remote server after you type in your password. If successful, you should see a message similar to 
 ```
 Last login: Sat Apr  8 15:20:52 2023 from 100.83.32.100
 Hello cs15lsp23fd, you are currently logged into ieng6-202.ucsd.edu
@@ -33,7 +35,7 @@ ieng6-203   16:35:01   4   0.03,  0.38,  0.79
  
 Sat Apr 08, 2023  4:35pm - Prepping cs15lsp23
 ```
-8. The following picture shows you the entire process of how I successfully connected to the remote server. Unfortunately, this picture does not contain the authentication part. However, the authentication part is just a matter of typing in "yes" to the terminal. Use the picture below as a guide!
+The following picture shows you the entire process of how I successfully connected to the remote server. Unfortunately, this picture does not contain the authentication part. However, the authentication part is just a matter of typing in "yes" to the terminal. Use the picture below as a guide!
 ![ssh](ssh.png)
 
 ### Step 3: Trying Some Commands
