@@ -20,6 +20,7 @@ I had so much difficulties connecting to a remote server. However, I don't think
 The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established. RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec. Are you sure you want to continue connecting (yes/no/[fingerprint])? 
 ```
 I typed in "yes" in the terminal to continue. 
+
 6. You will be prompted for your password. Type in your password.
 7. Pray that you get successfully logged into the remote server after you type in your password. If successful, you should see a message similar to 
 ```
