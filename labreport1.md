@@ -8,7 +8,7 @@ In Week 1, we learned how to log into a course-specific account on ieng6. In the
 Since I had already installed Visual Studio Code, often referred to as VSCode, I actually did not need to go through this step. If I did not have VSCode, I would have needed to download it. VS Code is a code editor developed by Microsoft, and it has consistently been one of the most popular integrated development environment (IDE) among developers. I have used a variety of IDEs, and I must say that VSCode is by far my favorite IDE. If you want to download VSCode, click [here](https://code.visualstudio.com/download). It is a very easy process! The picture below shows you the VSCode interface.
 ![VSCode-interface](vscodeinterface.png)
 
-### Step 2: Remotely Connecting
+### Step 2: Remote Connection
 
 I had so much difficulties connecting to a remote server. However, I don't think you will experience much difficulties. It is actually a very simple process that was unnecessarily hard for me because my course-specific account had some sort of bug. To connect to a remote server, all you need to do is follow the following steps: 
 1. Lookup your course-specific username [here](https://sdacs.ucsd.edu/~icc/index.php)
