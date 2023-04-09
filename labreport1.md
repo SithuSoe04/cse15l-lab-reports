@@ -51,8 +51,7 @@ This is where you can explore some useful commands that can help you navigate yo
 * `cat /home/linux/ieng6/cs15lsp23/public/hello.txt`
 
 It seems like the commands cd ~ and cd have the same functionality. They take you back to the user's home directory. 
-![cd](cdandcd~.png)
-
+![cdandcd~](cdandcd~.png)
 The command ls-lat and ls-a are also very similar in the sense that they list all the files in the current directory. However, the command ls-lat lists the file vertically, while the command ls-a the files horizontally. 
 ![ls](ls.png)
 The command ls <directory> lists all the files in the given <directory>. When I tried to type the command `ls <directory> where <directory> is /home/linux/ieng6/cs15lsp23/cs15lsp23abc`, where the abc is one of the other group members’ username, I received the message "access denied." This is probably because there is some security in place to ensure that we cannot just look at the files in another's user without their permission. 
