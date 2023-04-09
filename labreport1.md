@@ -1,7 +1,7 @@
 # Lab Report 1: Remote Access and File System
 
 ### Overview
-In Week 1, we learned how to log into a course-specific account on ieng6. In the following blog, I will be laying out the series of steps I took to access a remote server from my own computer. I will also be going over some newly learned commands that I used to navigate my own computer and the remote computer. Please note that the following instructions are specifically only for Mac users since I went through the entire process with a Macbook. If you use a Windows computer, the following steps may not work for you. 
+In Week 1, we learned how to log into a course-specific account on ieng6. In the following blog, I will be laying out the series of steps I took to access a remote server from my own computer. I will also be going over some newly learned commands that I used to navigate my own computer and the remote computer. Please note that the following instructions are **specifically only for Mac users**.
 
 ### Step 1: Installing Visual Studio Code
 
@@ -49,9 +49,9 @@ This is where you can explore some useful commands that can help you navigate yo
 * `cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/`
 * `cat /home/linux/ieng6/cs15lsp23/public/hello.txt`
 
-It seems like the commands cd ~ and cd have the same functionality. They take you back to the user's home directory. 
+The commands cd ~ and cd have the same functionality. They take you back to the user's home directory. 
 ![cd](cd.png)
-The command ls-lat and ls-a are also very similar in the sense that they list all the files in the current directory. However, the command ls-lat lists the file vertically, while the command ls-a the files horizontally. 
+The commands ls-lat and ls-a are also very similar in the sense that they list all the files in the current directory. However, the command ls-lat lists the file vertically, while the command ls-a the files horizontally. 
 ![ls](ls.png)
 The command ls <directory> lists all the files in the given <directory>. When I tried to type the command `ls <directory> where <directory> is /home/linux/ieng6/cs15lsp23/cs15lsp23abc`, where the abc is one of the other group members’ username, I received the message "access denied." This is probably because there is some security in place to ensure that we cannot just look at the files in another's user without their permission. 
 ```
