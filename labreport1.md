@@ -42,10 +42,10 @@ Here, you might be wondering where I faced difficulties like I mentioned above. 
 
 ### Step 3: Trying Some Commands
 This is where you can explore some useful commands that can help you navigate your own computer or the remote computer. I explored the following commands: 
-    - cd ~
-    - cd
-    - ls -lat
-    - ls -a
-    - ls <directory> where <directory> is /home/linux/ieng6/cs15lsp23/cs15lsp23abc, where the abc is one of the other group members’ username
-    - cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/
-    - cat /home/linux/ieng6/cs15lsp23/public/hello.txt
+    * cd ~
+    * cd
+    * ls -lat
+    * ls -a
+    * ls <directory> where <directory> is /home/linux/ieng6/cs15lsp23/cs15lsp23abc, where the abc is one of the other group members’ username
+    * cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/
+    * cat /home/linux/ieng6/cs15lsp23/public/hello.txt
