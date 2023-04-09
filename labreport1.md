@@ -42,12 +42,12 @@ Here, you might be wondering where I faced difficulties like I mentioned above. 
 
 ### Step 3: Trying Some Commands
 This is where you can explore some useful commands that can help you navigate your own computer or the remote computer. I explored the following commands: 
-* cd ~
-* cd
-* ls -lat
-* ls -a
-* ls <directory> where <directory> is /home/linux/ieng6/cs15lsp23/cs15lsp23abc, where the abc is one of the other group members’ username
-* cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/
-* cat /home/linux/ieng6/cs15lsp23/public/hello.txt
+* `cd ~`
+* `cd`
+* `ls -lat`
+* `ls -a`
+* `ls <directory> where <directory> is /home/linux/ieng6/cs15lsp23/cs15lsp23abc, where the abc is one of the other group members’ username`
+* `cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/`
+* `cat /home/linux/ieng6/cs15lsp23/public/hello.txt`
 
 It seems like the commands cd ~ and cd have the same functionality. They take you back to the user's home directory. The command ls-lat and ls-a are also very similar in the sense that they list all the files in the current directory. However, the command ls-lat lists the file vertically, while the command ls-a the files horizontally. The command ls <directory> lists all the files in the given <directory>. When I tried to type the command `ls <directory> where <directory> is /home/linux/ieng6/cs15lsp23/cs15lsp23abc`, where the abc is one of the other group members’ username, I received the message "access denied." This is probably because there is some security in place to ensure that we cannot just look at the files in another's user without their permission. The command `cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/` seemed like it copied the hello.txt file to the home directory. To check, I wrote the command cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/perl5. Sure enough, the directory perl5 then had the file hello.txt, confirming my suspecion that the command cp copies the file from the first argument to the directory given in the second argument. The command `cat /home/linux/ieng6/cs15lsp23/public/hello.txt` simply displays the hello.txt content in the terminal. 
