@@ -18,6 +18,7 @@ I had so much difficulties connecting to a remote server. However, I don't think
 5. If you are trying to connect to a remore server for the first time, you may see a message similar to `The authenticity of host 'ieng6-202.ucsd.edu (128.54.70.227)' can't be established. RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec. Are you sure you want to continue connecting (yes/no/[fingerprint])?`. I typed in "yes".   
 6. You will be prompted for your password. Type in your password.
 7. Pray that you get successfully logged into the remote server after you type in your password. If successful, you should see a message similar to the code snippet below:
+
 ```
 Last login: Sat Apr  8 15:20:52 2023 from 100.83.32.100
 Hello cs15lsp23fd, you are currently logged into ieng6-202.ucsd.edu
@@ -40,4 +41,11 @@ Here, you might be wondering where I faced difficulties like I mentioned above. 
 
 
 ### Step 3: Trying Some Commands
-This is where you can explore some useful commands that can help you navigate your own computer or the remote computer. 
+This is where you can explore some useful commands that can help you navigate your own computer or the remote computer. I explored the following commands: 
+    - cd ~
+    - cd
+    - ls -lat
+    - ls -a
+    - ls <directory> where <directory> is /home/linux/ieng6/cs15lsp23/cs15lsp23abc, where the abc is one of the other group members’ username
+    - cp /home/linux/ieng6/cs15lsp23/public/hello.txt ~/
+    - cat /home/linux/ieng6/cs15lsp23/public/hello.txt
