@@ -97,6 +97,51 @@ In the picture above, we can see that we succesfully added the message "Hi" to t
 In the picture above, we can see that we succesfully added the message "How are you?" to the web server. It is pretty much identical to how "Hi" was added in the previous example. The handleRequest method was called to process the URL. The entire URL was passed into the handleRequest method as an argument. Based on the URL, the handleRequest method determines what to return. In the example above, we passed in the URL "http://localhost:4000/add-message?s=How are you?" Interesting, the URL was automatically changed to "http://localhost:4000/add-message?s=How%20are%20you?". By visual inspection, we can guess that the %20 is simply a space character as all the spaces in the URL that we passed in were replaced by %20. Like before, the handleRequest method first checks whether the URL merely has the default path with just "/". If the URL is not merely the default path, the method checks whether the URL contains "add-message". Since our URL contains "add-message", the code inside the if statement runs. Inside the if statement, we can see that the program is spliting the query around the "=" string and assigning it into a string list named parameters. The second part of the parameter, which is the string "How%20are%20you?", is then added to the string toReturn, along with a newline character. Finally, the string toReturn is returned, allowing the web server to display the content inside toReturn, which has been modified to incorporate the newly added string with a new line character.
 
 ## Part 2
+We will investigate the bugs in ListTests.java. The following code snippet is an example of a failure-inducing input for the buggy program:
+```
+class firstLetterCapital implements StringChecker {
+    public boolean checkString(String s){
+        if (Character.isUpperCase(s.charAt(0))){
+            return true;
+        }
+        return false;
+    }
+}
+
+@Test
+    public void testFilter(){
+        List<String> stringArrayList = new ArrayList<>(Arrays.asList("Sithu Soe", "Basketball", "iPhone 14 Max Pro", "laptop"));
+        List<String> actualOutput = ListExamples.filter(stringArrayList, new firstLetterCapital());
+        List<String> expectedOutput = new ArrayList<>(Arrays.asList("Sithu Soe", "Basketball"));
+        assertEquals(expectedOutput, actualOutput);
+    }
+```
+The following code snippet is an example of an input that doesn't induce a failure:
+```
+class firstLetterCapital implements StringChecker {
+    public boolean checkString(String s){
+        if (Character.isUpperCase(s.charAt(0))){
+            return true;
+        }
+        return false;
+    }
+}
+
+@Test
+    public void testFilterForPalindromeLinkedLists(){
+        List<String> stringArrayList = new ArrayList<>(Arrays.asList("Sithu Soe", "Basketball", "iPhone 14 Max Pro", "laptop", "laptop", "iPhone 14 Max Pro", "Basketball", "Sithu Soe"));
+        List<String> actualOutput = ListExamples.filter(stringArrayList, new firstLetterCapital());
+        List<String> expectedOutput = new ArrayList<>(Arrays.asList("Sithu Soe", "Basketball", "Basketball", "Sithu Soe"));
+        assertEquals(expectedOutput, actualOutput);
+    }
+```
+The following picture shows the sympton of running the test in the first code snippet:
+
+
+A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)
+An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
+The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
+The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
 
 ## Part 3
 I learned a lot in the previous two weeks of CSE15L. Some examples include: 
