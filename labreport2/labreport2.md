@@ -168,7 +168,7 @@ The following code snippet shows the code after the bug was fixed:
     return result;
   }
 ```
-The only issue with the original filterTest method was that it was returning the elements in the opposite order. This is why it failed with a non-palindrome Arraylist but passed with a palindrome ArrayList. The fix addresses the issue because the fix made it so that instead of adding the desired element to the front of the list, it adds to the end of the list. Consequently, the filter method now returns the desired elements in the same order they appeared in the input list.
+The only issue with the original filterTest method was that it was returning the elements in the opposite order. This is why it failed with a non-palindrome ArrayList but passed with a palindrome ArrayList. The fix addresses the issue because the fix made it so that instead of adding the desired element to the front of the list, it adds the element to the end of the list. Consequently, the filter method now returns the desired elements in the same order they appeared in the input list.
 
 ## Part 3
 I learned a lot in the previous two weeks of CSE15L. Some examples include: 
