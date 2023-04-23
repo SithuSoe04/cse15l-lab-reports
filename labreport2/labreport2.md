@@ -155,10 +155,20 @@ The following code snippet shows the code before the bug was fixed:
     return result;
   }
 ```
-A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)
-An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
-The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
-The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
+
+The following code snippet shows the code after the bug was fixed: 
+```
+  static List<String> filter(List<String> list, StringChecker sc) {
+    List<String> result = new ArrayList<>();
+    for(String s: list) {
+      if(sc.checkString(s)) {
+        result.add(s);
+      }
+    }
+    return result;
+  }
+```
+The only issue with the original filterTest method was that it was returning the elements in the opposite order. This is why it failed with a non-palindrome Arraylist but passed with a palindrome ArrayList. The fix addresses the issue because the fix made it so that instead of adding the desired element to the front of the list, it adds to the end of the list. Consequently, the filter method now returns the desired elements in the same order they appeared in the input list.
 
 ## Part 3
 I learned a lot in the previous two weeks of CSE15L. Some examples include: 
