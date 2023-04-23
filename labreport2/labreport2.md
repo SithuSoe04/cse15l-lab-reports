@@ -62,7 +62,6 @@ import java.util.ArrayList;
 class Handler implements URLHandler {
     // The one bit of state on the server: a number that will be manipulated by
     // various requests.
-    ArrayList<String> stringList = new ArrayList<>();
     String toReturn = "";
 
 
@@ -71,7 +70,6 @@ class Handler implements URLHandler {
             return "Add messages by using the path /add-message?s=<string>";
         } else if (url.getPath().contains("/add-message")) {
             String[] parameters = url.getQuery().split("=");
-            stringList.add(parameters[1]);
             toReturn += parameters[1] + "\n";
             return toReturn;
         } else {
@@ -92,5 +90,10 @@ public class StringServer {
 }
 ```
 We will now test our web server by adding some new messages! The following picture shows a user modifying the URL path to add new messages to the web page.
+![add-new-message1](add-new-message1.png)
+In the picture above, we can see that we succesfully added the message "Hi" to the web server. The handleRequest method was called to process the URL. The entire URL was passed into the handleRequest method as an argument. Based on the URL, the handleRequest method determines what to return. In the example above, we passed in the URL http://localhost:4000/add-message?s=Hi. The handleRequest method first checks whether the URL merely has the default path with just "/". If the URL is not merely the default path, the method checks whether the URL contains "add-message". Since our URL contains "add-message", the code inside the if statement runs. Inside the if statement, we can see that the program is spliting the query around the "=" string and assigning it into a string list named parameters. The second part of the parameter, which is the string "Hi", is then added to the string toReturn, along with a newline character. Finally, the string toReturn is returned, allowing the web server to display the content inside toReturn, which has been modified to incorporate the newly added string with a new line character.
+
+![add-new-message2](add-new-message2.png)
+In the picture above, we can see that we succesfully added the message "How are you?" to the web server. It is pretty much identical to how "Hi" was added in the previous example. The handleRequest method was called to process the URL. The entire URL was passed into the handleRequest method as an argument. Based on the URL, the handleRequest method determines what to return. In the example above, we passed in the URL http://localhost:4000/add-message?s=How are you? Interesting, the URL was automatically changed to http://localhost:4000/add-message?s=How%20are%20you?. By visual inspection, we can guess that the %20 is simply a space character as all the spaces in the URL that we passed in were replaced by %20. Like before, the handleRequest method first checks whether the URL merely has the default path with just "/". If the URL is not merely the default path, the method checks whether the URL contains "add-message". Since our URL contains "add-message", the code inside the if statement runs. Inside the if statement, we can see that the program is spliting the query around the "=" string and assigning it into a string list named parameters. The second part of the parameter, which is the string "How%20are%20you?", is then added to the string toReturn, along with a newline character. Finally, the string toReturn is returned, allowing the web server to display the content inside toReturn, which has been modified to incorporate the newly added string with a new line character.
 
 
