@@ -1,7 +1,7 @@
 # Lab Report 2 - Servers and Bugs
 
 ## Part 1 - Creating a Web Server
-The following code has been copied from the starter code provided in Week 2. This file essentially allows us to host a web server on our local computer!
+The following code has been copied from the starter code provided in Week 2. This file essentially allows us to host a web server on our local computer! It is stored inside a file named Server.java.
 ```
 import java.io.IOException;
 import java.io.OutputStream;
@@ -53,7 +53,7 @@ public class Server {
     }
 }
 ```
-The following code has also been copied from the starter code provided in Week 2. However, it has been modified to implement a web server that supports adding new messages and rendering them on the screen. 
+The following code has also been copied from the starter code provided in Week 2. However, it has been modified to implement a web server that supports adding new messages and rendering them on the screen. It is stored inside a file name StringServer.java.
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -91,3 +91,6 @@ public class StringServer {
     }
 }
 ```
+We will now test our web server by adding some new messages! The following picture shows a user modifying the URL path to add new messages to the web page.
+
+
