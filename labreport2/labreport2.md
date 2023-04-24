@@ -96,7 +96,7 @@ In the picture above, we can see that we succesfully added the message "Hi" to t
 ![add-new-message2](add-new-message2.png)
 In the picture above, we can see that we succesfully added the message "How are you?" to the web server. It is pretty much identical to how "Hi" was added in the previous example. The handleRequest method was called to process the URL. The entire URL was passed into the handleRequest method as an argument. Based on the URL, the handleRequest method determines what to return. In the example above, we passed in the URL "http://localhost:4000/add-message?s=How are you?" Interesting, the URL was automatically changed to "http://localhost:4000/add-message?s=How%20are%20you?". By visual inspection, we can guess that the %20 is simply a space character as all the spaces in the URL that we passed in were replaced by %20. Like before, the handleRequest method first checks whether the URL merely has the default path with just "/". If the URL is not merely the default path, the method checks whether the URL contains "add-message". Since our URL contains "add-message", the code inside the if statement runs. Inside the if statement, we can see that the program is spliting the query around the "=" string and assigning it into a string list named parameters. The second part of the parameter, which is the string "How%20are%20you?", is then added to the string toReturn, along with a newline character. Finally, the string toReturn is returned, allowing the web server to display the content inside toReturn, which has been modified to incorporate the newly added string with a new line character.
 
-## Part 2
+## Part 2 - Debugging
 We will investigate the bugs in ListTests.java. For context, the filter method is supposed to return a new list that has all the elements of the input list for which the StringChecker returns true, and not the elements that return false, in the same order they appeared in the input list. The following code snippet is an example of a failure-inducing input for the buggy program:
 ```
 class firstLetterCapital implements StringChecker {
@@ -170,7 +170,7 @@ The following code snippet shows the code after the bug was fixed:
 ```
 The only issue with the original filterTest method was that it was returning the elements in the opposite order. This is why it failed with a non-palindrome ArrayList but passed with a palindrome ArrayList. The fix addresses the issue because the fix made it so that instead of adding the desired element to the front of the list, it adds the element to the end of the list. Consequently, the filter method now returns the desired elements in the same order they appeared in the input list.
 
-## Part 3
+## Part 3 - The Learning Experience
 I learned a lot in the previous two weeks of CSE15L. Some examples include: 
 - Launching a local host from terminal: I had no idea that we could write a program to launch a local host from our terminal. Although I do not fully understand the starter code provided in Server.java and NumberServer.java, I have a good idea of how the programs works. I also learned how to use JUnit with command line argument. 
 - Running JUnits tests with command line argument: In CSE12, we used Eclispe so that we do not need to use command line argument for JUnit tests. It feels good to know what Eclispe is doing under the hood for JUnit tests to function. 
