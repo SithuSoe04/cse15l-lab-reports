@@ -9,7 +9,6 @@ The grep command, in simplest terms, searches for a specified string inside a sp
 ``
 [cs15lsp23fd@ieng6-203]:Media:282$ grep "legal" Nonprofit_Buys.txt
 other agencies providing legal help and basic
-
 provider of legal services for Ventura County's poor closer to two 
 migrant-worker legal assistance program and a newer basic services
 Legal Services, as the county's sole provider of legal help to the
