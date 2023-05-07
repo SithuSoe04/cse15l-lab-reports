@@ -37,7 +37,7 @@ Now suppose you are not really interested in the lines containing the word "lega
 7
 ```
 
-While using the regular grep command to search for lines with a certain word, you may get lines that do not contain words that exactly macthes the specificied word. For instance, if you do `grep "as" Nonprofit_Buys.txt`, you will get lines that contain the words "assistance", "was", "has", and any other words that contain "as" in it. In order to only get lines that exactly matches your specified string, you can use -w with your grep command. Using the example of "as", we can use the command `grep -w "as" Nonprofit_Buys.txt` to ensure that we only get lines that contain the word "as" and not lines that also contain words like "assistance". 
+While using the regular grep command to search for lines with a certain word, you may get lines that do not contain words that exactly matches the specified word. For instance, if you do `grep "as" Nonprofit_Buys.txt`, you will get lines that contain the words "assistance", "was", "has", and any other words that contain "as" in it. In order to only get lines that exactly matches your specified string, you can use -w with your grep command. Using the example of "as", we can use the command `grep -w "as" Nonprofit_Buys.txt` to ensure that we only get lines that contain the word "as" and not lines that also contain words like "assistance". 
 
 ```
 [cs15lsp23fd@ieng6-203]:Media:312$ grep -w "as" Nonprofit_Buys.txt
@@ -48,7 +48,8 @@ Padilla said the model of owning a building that functions as a
 Now suppose you want to find lines that start with a specified word. To do that, you can add ^ in front of the word you are trying to search for. For instance, if we want to find lines that start with the word "The", we can use the command `grep "^The" Nonprofit_Buys.txt`. Look at the code snippet below to better understand how to use ^ with the grep command. 
 
 
-```grep "^The" Nonprofit_Buys.txt
+```
+grep "^The" Nonprofit_Buys.txt
 The purchase will help meet the organization's long-term plan of
 The migrant program generally has taken on issues related to
 The purchase of the building on A Street in downtown Oxnard also
