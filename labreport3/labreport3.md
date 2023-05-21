@@ -72,7 +72,7 @@ Now suppose you want to find lines that start with a specified word. To do that,
 
 
 ```
-grep "^The" Nonprofit_Buys.txt
+[cs15lsp23fd@ieng6-201]:Media:448$ grep "^The" Nonprofit_Buys.txt
 The purchase will help meet the organization's long-term plan of
 The migrant program generally has taken on issues related to
 The purchase of the building on A Street in downtown Oxnard also
