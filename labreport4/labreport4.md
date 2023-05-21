@@ -32,7 +32,7 @@ As can be observed above, there seems to be something wrong with my code. I will
 ![vim](vim.png)
 
 ## Step 5 - Running the test again
-Since I have previously typed ``bash test.sh``, I used the up arrow to get the command again. I just had to press <up> twice to get the command back as the command ``bash test.sh`` was 2 up in history. 
+Since I have previously typed ``bash test.sh``, I used the up arrow to get the command again. I just had to press ``<up>`` twice to get the command back as the command ``bash test.sh`` was 2 up in history. 
 ![rerunning](rerunning.png)
   
 ## Step 6 - Commiting and pushing the changes to Github
