@@ -45,12 +45,27 @@ Now suppose you are not really interested in the lines containing the word "lega
 7
 ```
 
+```
+[cs15lsp23fd@ieng6-201]:Media:428$ grep -c "help" Nonprofit_Buys.txt
+4
+```
+
 While using the regular grep command to search for lines with a certain word, you may get lines that do not contain words that exactly matches the specified word. For instance, if you do `grep "as" Nonprofit_Buys.txt`, you will get lines that contain the words "assistance", "was", "has", and any other words that contain "as" in it. In order to only get lines that exactly matches your specified string, you can use -w with your grep command. Using the example of "as", we can use the command `grep -w "as" Nonprofit_Buys.txt` to ensure that we only get lines that contain the word "as" and not lines that also contain words like "assistance". 
 
 ```
 [cs15lsp23fd@ieng6-203]:Media:312$ grep -w "as" Nonprofit_Buys.txt
 Legal Services, as the county's sole provider of legal help to the
 Padilla said the model of owning a building that functions as a
+```
+
+```
+[cs15lsp23fd@ieng6-201]:Media:432$ grep -w "has" Nonprofit_Buys.txt
+California Rural Legal Assistance has purchased an Oxnard
+The migrant program generally has taken on issues related to
+farm labor and has represented large groups of workers. The basic
+California Rural Legal Assistance has provided legal services to
+Oxnard office has provided services exclusively to farm workers for
+to empower communities," said Gomez. He has already begun
 ```
 
 Now suppose you want to find lines that start with a specified word. To do that, you can add ^ in front of the word you are trying to search for. For instance, if we want to find lines that start with the word "The", we can use the command `grep "^The" Nonprofit_Buys.txt`. Look at the code snippet below to better understand how to use ^ with the grep command. 
@@ -66,4 +81,13 @@ The organization raised about $60,000 to purchase the A Street
 The building also houses five businesses that were already
 The idea is to bring together organizations that provide
 ```
+
+```
+[cs15lsp23fd@ieng6-201]:Media:436$ grep "^farm" Nonprofit_Buys.txt
+farm labor and has represented large groups of workers. The basic
+farm workers and other poor people statewide for 35 years. Its
+farm workers.
+```
+
+
 
