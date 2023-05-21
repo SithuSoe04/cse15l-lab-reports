@@ -17,7 +17,8 @@ First, I navigated to the lab7 directory. Inside the directory, there is a file 
 
 ## Step 4 - Editing code to fix the bug
 As can be observed above, there seems to be some bugs in my code. I will fix the bug only using the command line. First, I typed ``vim ListExamples.java`` to go into the ListExamples.java file. Since I have prior knowledge that the error in the code is just that index1 is used instead of index2 in the final loop in merge, I searched for index1 by typing ``/index1`` in vim. Since I know that the final loop is near the end of the file, I pressed <shift + n> to get to the last usage of index1. I then pressed "e" to get to the last character of the word. After that, I pressed "x" to delete the last character. From there, I went into Insert mode by pressing "i". I then simply adding the character "2" to fix the bug! Finally, I went back into normal mode by pressing the esc key. I then saved and quit vim mode by entering the command ``:wq``. 
-Keys Pressed:
+
+#### Keys Pressed:
 1. vim ListExamples.java <enter>
 2. /index1 <enter>
 3. <shift + n>
@@ -29,5 +30,7 @@ Keys Pressed:
 9. :wq 
 ![vim](vim.png)
 
-## Step 5 - Running the tests again
+## Step 5 - Running the test again
+Since I have previously typed ``bash test.sh`` in history, I used the up arrow to get the command again. I just had to press <up> twice to get the command back as the command ``bash test.sh`` was 2 up in history. 
+![rerunning](rerunning.png)
 
