@@ -28,9 +28,13 @@ As can be observed above, there seems to be some bugs in my code. I will fix the
 7. 2
 8. esc
 9. :wq 
+  
 ![vim](vim.png)
 
 ## Step 5 - Running the test again
 Since I have previously typed ``bash test.sh`` in history, I used the up arrow to get the command again. I just had to press <up> twice to get the command back as the command ``bash test.sh`` was 2 up in history. 
 ![rerunning](rerunning.png)
-
+  
+## Step 6 - Commiting and pushing the changes to Github
+Now that everything is working, I want to commit and push the changes back to my Github repository. To do so, I need to first add the modified changes by entering ``git add ListExamples.java". I then commit to the changes by entering ``git commit -m "Fixed a bug in ListExamples.java". The ``-m <String>`` allows me to add a message so that everyone is aware of what changes I made. Finally, I entered ``git push`` to push the changes to my Github.
+![gitpush](gitpush.png)
