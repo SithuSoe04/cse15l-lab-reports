@@ -4,10 +4,12 @@
 Today, we will fix a bug in our code all from the command line and push it to our Github repository. 
 
 ## Step 1 - Logging into ieng6
-To log into my ieng6 account, I just typed ``ssh cs15lsp23fd@ieng6.ucsd.edu`` into the terminal. 
+To log into my ieng6 account, I just typed ``ssh cs15lsp23fd@ieng6.ucsd.edu`` into the terminal. The command ``ssh`` essentially allows you to connect to a remote computer. 
+![ieng6](ssh.png)
 
 ## Step 2 - Cloning a file from my Github account
-To clone a file called "lab7" from my Github account, I just typed ``git clone git@github.com:SithuSoe04/lab7.git``.
+To clone a file called "lab7" from my Github account, I just typed ``git clone git@github.com:SithuSoe04/lab7.git``. The command ``git clone`` allows you to clone a repository into your local or remote server.
+![gitclone](gitclone.png)
 
 ## Step 3 - Running the tests
 First, I navigated to the lab7 directory. Inside the directory, there is a file called "test.sh" that will run the appropriate tests for us. Consequently, I just needed to type ``bash test.sh`` to run the tests.
