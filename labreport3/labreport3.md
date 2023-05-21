@@ -38,7 +38,7 @@ Now that we have a basic understanding of how grep command works, let's take a l
 62:raising money locally to help pay the mortgage.
 ```
 
-Now suppose you are not really interested in the lines containing the word "legal". You are merely interested in how many times the word "legal" was used in that file. To obtain the number of times a certain word was used, you can use -c along with the grep command. In our case, we would write `grep -c "legal" Nonprofit_Buys.txt` to get the number of times the word "legal" popped up in the file. Look at the code snippet below to better understand -c option for the grep command. 
+Now suppose you are not really interested in the lines containing the word "legal". You are merely interested in how many times the word "legal" was used in that file. To obtain the number of times a certain word was used, you can use -c along with the grep command. In our case, we would write `grep -c "legal" Nonprofit_Buys.txt` to get the number of times the word "legal" popped up in the file. Look at the two examples below to better understand -c option for the grep command. 
 
 ```
 [cs15lsp23fd@ieng6-203]:Media:281$ grep -c "legal" Nonprofit_Buys.txt
@@ -50,7 +50,7 @@ Now suppose you are not really interested in the lines containing the word "lega
 4
 ```
 
-While using the regular grep command to search for lines with a certain word, you may get lines that do not contain words that exactly matches the specified word. For instance, if you do `grep "as" Nonprofit_Buys.txt`, you will get lines that contain the words "assistance", "was", "has", and any other words that contain "as" in it. In order to only get lines that exactly matches your specified string, you can use -w with your grep command. Using the example of "as", we can use the command `grep -w "as" Nonprofit_Buys.txt` to ensure that we only get lines that contain the word "as" and not lines that also contain words like "assistance". 
+While using the regular grep command to search for lines with a certain word, you may get lines that do not contain words that exactly matches the specified word. For instance, if you do `grep "as" Nonprofit_Buys.txt`, you will get lines that contain the words "assistance", "was", "has", and any other words that contain "as" in it. In order to only get lines that exactly matches your specified string, you can use -w with your grep command. Using the example of "as", we can use the command `grep -w "as" Nonprofit_Buys.txt` to ensure that we only get lines that contain the word "as" and not lines that also contain words like "assistance". Look at the two examples below to better understand the -w option for the grep command.
 
 ```
 [cs15lsp23fd@ieng6-203]:Media:312$ grep -w "as" Nonprofit_Buys.txt
@@ -68,7 +68,7 @@ Oxnard office has provided services exclusively to farm workers for
 to empower communities," said Gomez. He has already begun
 ```
 
-Now suppose you want to find lines that start with a specified word. To do that, you can add ^ in front of the word you are trying to search for. For instance, if we want to find lines that start with the word "The", we can use the command `grep "^The" Nonprofit_Buys.txt`. Look at the code snippet below to better understand how to use ^ with the grep command. 
+Now suppose you want to find lines that start with a specified word. To do that, you can add ^ in front of the word you are trying to search for. For instance, if we want to find lines that start with the word "The", we can use the command `grep "^The" Nonprofit_Buys.txt`. Look at the two examples below to better understand how to use ^ with the grep command. 
 
 
 ```
