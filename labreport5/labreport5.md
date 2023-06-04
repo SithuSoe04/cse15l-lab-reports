@@ -11,7 +11,7 @@ I am running a testFilter test where the filter method is supposed to only give 
 I am simply running a bash script. Inside the test.sh file, which was ran with bash script, I wrote two lines of code to run some JUnit tests. I have attached a screenshot of the test.sh file, along with the screenshots of ListExamples.java and ListTests.java, below to give you a better understanding of the content inside the file.
 ![test](test.png)
 ![listtest](listtest.png)
-![listexample](listexamples.png)
+![listexample](listexample.png)
 
 ## TA Siracle's Response:
 Hey Sithu, thank you for providing a very detailed explanation of the bug you are facing. It makes things a lot easier on my end. You are absolutely correct with your guess that you might be returning something of an opposite nature in your firstLetterCapital method. Based on how your filter method is written, which only adds the item to the arraylist when the checked condition is true, what should you return in your firstLetterCapital method when the first letter is an uppercase?
@@ -19,12 +19,23 @@ Hey Sithu, thank you for providing a very detailed explanation of the bug you ar
 ## Student Sithu's Response:
 Hi TA Siracle, thank you so much for your response. It seems like I have carelessly been returning false when the first letter is capital in my firstLetterCapital method. All this time, I thought I have been checking that the first letter is not capital in my if condition, which is why I have been returning false if the condition is met. I have made the appropriate changes, and the test is now working as expected. Yay!
 
+
 # Information about the setup
  
 ## The file & directory structure needed
 Assuming you have the lib library with the appropriate JUnit files inside your current directory, you only need three other files in your current directory: ListExamples.java, ListTests.java, and test.sh. Refer to the screenshot below to get a better understanding of the file structure. 
-
+![filestructure](filestructure.png)
 
 ## The contents of each file before fixing the bug
+Please refer to the pictures below to get the contents of each file before fixing the bug. As you can see, the firstLetterCapital is returning false when the first letter is an uppercase. This is the exact opposite of the desired behavior. Based on the filter method, it is supposed to return true when the first letter is an uppercase. 
+![test](test.png)
+![listtest](listtest.png)
+![listexample](listexample.png)
+
 ## The full command line (or lines) you ran to trigger the bug
+I simply ran ``bash test.sh`` to trigger the bug. Inside the test.sh file, I ran some JUnit tests to test my program. Please refer to the screenshot below to get a better understanding of the test.file. 
+![test](test.png)
+
 ## A description of what to edit to fix the bug
+I simply needed to swap the return values in the firstLetterCapital method. Instead of returning false when the first letter is capital, I just had to return true. Otherwise, I needed to return false. Look at the screenshot below to see the fix!
+
