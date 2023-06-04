@@ -18,7 +18,7 @@ Hey Sithu, thank you for providing a very detailed explanation of the bug you ar
 
 ## Student Sithu's Response:
 Hi TA Siracle, thank you so much for your response. It seems like I have carelessly been returning false when the first letter is capital in my firstLetterCapital method. All this time, I thought I have been checking that the first letter is not capital in my if condition, which is why I have been returning false if the condition is met. I have made the appropriate changes, and the test is now working as expected. Yay!
-
+![pass](pass.png)
 
 # Information about the setup
  
@@ -38,4 +38,4 @@ I simply ran ``bash test.sh`` to trigger the bug. Inside the test.sh file, I ran
 
 ## A description of what to edit to fix the bug
 I simply needed to swap the return values in the firstLetterCapital method. Instead of returning false when the first letter is capital, I just had to return true. Otherwise, I needed to return false. Look at the screenshot below to see the fix!
-
+![fix](fix.png)
