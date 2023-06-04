@@ -39,3 +39,7 @@ I simply ran ``bash test.sh`` to trigger the bug. Inside the test.sh file, I ran
 ## A description of what to edit to fix the bug
 I simply needed to swap the return values in the firstLetterCapital method. Instead of returning false when the first letter is capital, I just had to return true. Otherwise, I needed to return false. Look at the screenshot below to see the fix!
 ![fix](fix.png)
+
+# Reflection
+The coolest thing I have learned in the second half of this quarter that I did not know before would be vim. I find it pretty crazy that I can edit files on a remote computer without even opening an editer like VSCode. There are endless things that can be done with vim. As much as I like vim, I do feel that they have weird syntax. I sometimes find myself blanking out in vim because every key pressed means something in vim. However, through more practice, I believe vim will become more natural to me. I hope to take advantage of vim to do more cooler things on a remote computer in the forseeable future! 
+
